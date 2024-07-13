@@ -25,10 +25,12 @@ console.log(typeof num);
 let bool = Boolean() //output - boolean
 console.log(typeof bool);
 
-let obj = Object() //output - object
+// let obj = Object() //output - object
+let obj = {name:"sanaullah",age:18} //output - object
 console.log(typeof obj);
 
-let arr = Array() //output - object
+// let arr = Array() //output - object
+let arr = [22,33,44] //output - object
 console.log(typeof arr);
 
 // Activity 4: Reassiging Variable
