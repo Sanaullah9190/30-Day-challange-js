@@ -4,27 +4,27 @@
 //task 2:
 
 new Promise((resolve,reject)=>{
-    // console.log("hello before the resolve");
+    console.log("hello before the resolve");
     setTimeout(()=>{
         resolve()
     },2000)
 })
 .then(()=>{
-    // console.log("after the resolve promise in 2 sec");
+    console.log("after the resolve promise in 2 sec");
 })
 
 // task 2:
 
 new Promise((resolve,reject)=>{
-    // console.log("hello before the resolve");
+    console.log("hello before the resolve");
     setTimeout(()=>{
        reject()
     },2000)
 })
 .then(()=>{
-    // console.log("apromise is resolve after 2 sec");
+    console.log("apromise is resolve after 2 sec");
 }).catch((error)=>{
-    // console.log(`promise is reject after 2 sec ${error}`);
+    console.log(`promise is reject after 2 sec ${error}`);
 })
 
 // activites: 2 Chainnig Pomise
@@ -39,12 +39,12 @@ const ChainPromise = new Promise((resolve,reject)=>{
 })
 ChainPromise
 .then((data)=>{
-    // console.log(data);
+    console.log(data);
     return data.name
 }).then((name)=>{
-    // console.log(name);
+    console.log(name);
 }).finally(()=>{
-    // console.log("promise is finished");
+    console.log("promise is finished");
 })
 
 // ACTIVITY 3: USING ASYNC AWAIT
@@ -62,7 +62,7 @@ const promiseTwo = async function(){
     const data = await PromiseOne
     console.log(data);
 }
-// promiseTwo()
+promiseTwo()
 
 //task 5:
 
@@ -88,7 +88,7 @@ promiseFour = async function(){
         console.log("promise is rejected");
     }
 }
-// promiseFour()
+promiseFour()
 
 // ACTIVITES FETCHING DATA FROM API
 
@@ -98,8 +98,8 @@ fetch('http://api.tvmaze.com/search/shows?q=golden girls')
 .then((responce)=> responce.json())
 .then((data)=> data[0])
 .then((show)=>{
-    // console.log(show.show.name);
-    // console.log(show.show.url);
+    console.log(show.show.name);
+    console.log(show.show.url);
 })
 .catch((error)=>{
     console.log("error",error);
@@ -118,7 +118,7 @@ const apiFatch = async()=>{
     }
 }
 
-// apiFatch()
+apiFatch()
 
 // ACTIVITIES 5: CONCURRENT PROMISE
 // TASK 8:=
@@ -127,11 +127,12 @@ const promiseA = new Promise((resolve)=> setTimeout(()=>resolve("Promise A is re
 const promiseB = new Promise((resolve)=> setTimeout(()=>resolve("Promise B is resolve"),4000))
 const promiseC = new Promise((resolve)=> setTimeout(()=>resolve("Promise C is resolve"),1000))
 
-// Promise.all([promiseA,promiseB,promiseC])
-// .then((value)=>{
-//     console.log(`the value of all promise is ${value}`);
-// })
+Promise.all([promiseA,promiseB,promiseC])
+.then((value)=>{
+    console.log(`the value of all promise is ${value}`);
+})
 
+//TASK 9
 Promise.race([promiseA,promiseB,promiseC])
 .then((value)=>{
     console.log(`first resolve ${value}`);
