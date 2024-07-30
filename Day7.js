@@ -8,10 +8,10 @@ let book = {
     year:2024,
 }
 
-// console.log(book);
+console.log(book);
 
 //task 2;
-// console.log(book.title,book.author);
+console.log(book.title,book.author);
 
 //ACTIVITIES 2 ; OBJECT method
 
@@ -19,7 +19,7 @@ let book = {
 book.getDetails = function(){
     return `Book title is ${book.title} and authour is ${book.author}`
 }
-// console.log(book.getDetails());
+console.log(book.getDetails());
 
 
 // task 4 
@@ -28,7 +28,7 @@ book.updateYear = function(year){
     return `publish year is ${book.year}`
 }
 
-// console.log(book.updateYear(2023));
+console.log(book.updateYear(2023));
 
 //ACTIVITIES 3 ; NESTED OBJECT
 
@@ -45,12 +45,12 @@ let librarry = {
     ]
 }
 
-// console.log(librarry);
+console.log(librarry);
 
 //task 6 =>
 
 for(let i = 0 ; i<librarry.books.length ; i++){
-    // console.log(`Name: ${librarry.name} \n Title: ${librarry.books[i].title}`);
+    console.log(`Name: ${librarry.name} \n Title: ${librarry.books[i].title}`);
 }
 
 //ACTIVITIES 4 ; THE THIS KEYWORD
@@ -60,7 +60,7 @@ librarry.getDetail = function(i){
     return `Title: ${this.books[i].title} and Year: ${this.books[i].year}`
 }
 
-// console.log(librarry.getDetail(3));
+console.log(librarry.getDetail(3));
 
 //ACTIVITIES 5 ; need to do this net day
 // TASK 7 =

@@ -96,7 +96,7 @@ switch(true){
 // TASK 6:
 
 let num  =  7
-// console.log(num % 2 == 0);
+console.log(num % 2 == 0);
 
 if(num % 2 == 0){
     console.log(num,"is even Number");
@@ -109,7 +109,7 @@ if(num % 2 == 0){
 
 let date1 = new Date()
 let year = date1.getFullYear()
-// console.log(year);
+console.log(year);
 
 if(year % 4 ==0 && year % 100 !== 0 || year % 400 == 0){
     console.log(year," is leap year");
