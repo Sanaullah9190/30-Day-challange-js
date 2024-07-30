@@ -5,15 +5,15 @@
 const name ="sanaulah"
 const age = 18
 
-// console.log(`Name is ${name} and age is ${age}`);
+console.log(`Name is ${name} and age is ${age}`);
 
-// TASK 1:-
+// TASK 2:-
 
 const country = 'INDIA'
 const about = "is the very beutifull country"
 const last = 'thank'
 
-// console.log(`my country name is ${country} and ${about} and ${last}`);
+console.log(`my country name is ${country} and ${about} and ${last}`);
 
 // ACTIVITIES 1:- DESTRUCTURING
 
@@ -22,7 +22,7 @@ let arr = [6,5,7,34,77,88,96,43]
 
 let [first , second] = arr
 
-// console.log(`first element is ${first} and second element is ${second}`);
+console.log(`first element is ${first} and second element is ${second}`);
 
 // task 4
 
@@ -35,7 +35,7 @@ let obj = {
 
 let {title,author} = obj
 
-// console.log(`destructure title is ${title} and sestructure author is ${author}`);
+console.log(`destructure title is ${title} and sestructure author is ${author}`);
 
 // ACTIVITIES 3:- spread and rest operatpr 
 
@@ -44,7 +44,7 @@ let person = ['ashish','aman','topa','sanaullah','saksham']
 
 let newArr = [...person,'aditya','rahul']
 
-// console.log(newArr);
+console.log(newArr);
 
 // task 6;-
 function sum(...number){
@@ -52,7 +52,7 @@ function sum(...number){
 }
 let result = sum(1,2,3,4,5,6)
 
-// console.log(result);
+console.log(result);
 
 // task 7-
 
@@ -62,8 +62,8 @@ function product(a,b=1){
 
 let withBothParameter = product(3,5)
 let withoutBothParameter = product(3)
-// console.log(withBothParameter);
-// console.log(withoutBothParameter);
+console.log(withBothParameter);
+console.log(withoutBothParameter);
 
 
 // task 8:-
@@ -80,8 +80,8 @@ const setData = {
     }
 }
 
-// console.log(setData);
-// console.log(setData.greet());
+console.log(setData);
+console.log(setData.greet());
 
 // task 8 
 let propName = 'first Name'
